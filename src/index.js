@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const WriteSmth = (props) => {
+const WriteSmth = props => {
     return <h1>{props.wrod1}</h1>
 }
 
-const WriteSmthElse = (props) => {
+const WriteSmthElse = props => {
     return <WriteSmth wrod1={props.word2}/>
 }
 
-const WriteAgainSmth = (props) => {
+const WriteAgainSmth = props => {
     return <WriteSmthElse word2={props.word3}/>
 }
 
